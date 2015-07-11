@@ -19,10 +19,12 @@ $ npm install -g gulp           # Install Gulp task runner globally
 $ npm install                   # Install Node.js components listed in ./package.json
 ```
 
-### How to Run
+Enable CORS in your browser with something like this [chrome plugin](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
+
+Then run the project:
 
 ```shell
-$ gulp                          # or, `gulp --release`
+$ gulp
 ```
 ### And finally
 
