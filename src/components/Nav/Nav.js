@@ -43,12 +43,12 @@ class Nav {
       <div className="span3 narrow-hidden king-nav sidebar">
         {this.state.subNavs.map((subNav) => {
           return (
-            <div>
+            <div key={subNav.title}>
               <div></div>
               <h3>{subNav.title}</h3>
               <div>
                 {subNav.links.map((link) => {
-                  return <a href={link.url} title={link.text}>{link.text}</a>;
+                  return <a key={link.url} href={link.url} title={link.text}>{link.text}</a>;
                 })}
               </div>
             </div>

@@ -1,12 +1,14 @@
 /*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 import http from 'superagent';
 
 class ProductCarousel extends React.Component {
 
-  static contextTypes = {
-    title: PropTypes.string
+  static propTypes = {
+    ids: React.PropTypes.string,
+    title: React.PropTypes.string,
+    url: React.PropTypes.string
   };
 
   constructor(props) {
