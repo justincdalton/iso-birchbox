@@ -1,0 +1,6 @@
+{
+  "name": "Spotlight",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Spotlight.js"
+}
