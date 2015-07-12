@@ -2,6 +2,38 @@
 
 import React from 'react';
 
+class NavLink {
+
+  static propTypes = {
+    link: React.PropTypes.object
+  }
+
+  render() {
+    return <a href={this.props.link.url} title={this.props.link.text}>{this.props.link.text}</a>;
+  }
+}
+
+class SubNav {
+
+  static propTypes = {
+    subNav: React.PropTypes.object
+  }
+
+  render() {
+    return (
+      <div>
+        <div></div>
+        <h3>{this.props.subNav.title}</h3>
+        <div>
+          {this.props.subNav.links.map((link) => {
+            return <NavLink key={link.url} link={link} />;
+          })}
+        </div>
+      </div>
+    );
+  }
+}
+
 class Nav {
 
   constructor() {
@@ -42,17 +74,7 @@ class Nav {
     return (
       <div className="span3 narrow-hidden king-nav sidebar">
         {this.state.subNavs.map((subNav) => {
-          return (
-            <div key={subNav.title}>
-              <div></div>
-              <h3>{subNav.title}</h3>
-              <div>
-                {subNav.links.map((link) => {
-                  return <a key={link.url} href={link.url} title={link.text}>{link.text}</a>;
-                })}
-              </div>
-            </div>
-          );
+          return <SubNav key={subNav.title} subNav={subNav} />;
         })}
       </div>
     );
