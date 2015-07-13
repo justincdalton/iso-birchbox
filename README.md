@@ -10,7 +10,7 @@ In the isomorphic page the majority of the content is available almost instantly
 
 ### Want to see it in action?
 
-Okay, enough with the wordy explanations, here's how you can run it. First fork and clone the repository the :
+Okay, enough with the wordy explanations, here's how you can run it. First fork and clone the repository then:
 
 ```shell
 $ cd iso-birchbox
