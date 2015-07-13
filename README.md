@@ -4,7 +4,7 @@ While visiting birchbox.com, I noticed that the site generally felt a bit, well,
 
 I'll give a preview, but if you are at all interested, I encourage you to try running the project yourself to see the results.
 
-Overall, I was very impressed with the improvements. The birchbox landing page consistently takes about 3 to 4 seconds to completely load while my isomorphic version takes about 1 to 1.5 seconds. Obviously there is some added latency in hitting a remote site versus a local one, but the difference is more significant than just the overall numbers.
+Overall, I was very impressed with the improvements. The [birchbox landing page](https://www.birchbox.com/men/shop) consistently takes about 3 to 4 seconds to completely load while my isomorphic version takes about 1 to 1.5 seconds. Obviously there is some added latency in hitting a remote site versus a local one, but the difference is more significant than just the overall numbers.
 
 In the isomorphic page the majority of the content is available almost instantly and the rest is loaded before you would reasonably scroll to it. Birchbox's page, however, shows a mostly blank white page for about 1-2 seconds before you have anything to read or interact with. This is a major user experience improvement, and essential for companies with a vested interest in e-commerce.
 
