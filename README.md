@@ -10,10 +10,9 @@ In the isomorphic page the majority of the content is available almost instantly
 
 ### Want to see it in action?
 
-Okay, enough with the wordy explanations, here's how you can run the thing:
+Okay, enough with the wordy explanations, here's how you can run it. First fork and clone the repository the :
 
 ```shell
-$ git clone git@github.com:justincdalton/iso-birchbox.git
 $ cd iso-birchbox
 $ npm install -g gulp           # Install Gulp task runner globally
 $ npm install                   # Install Node.js components listed in ./package.json
